@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta name="description" content="">
+  <meta name="author" content="">
+
+  <title>User Science Journal</title>
+
+  <!-- Bootstrap core CSS -->
+  <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css " rel="stylesheet">
+
+  <!-- Custom fonts for this template -->
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr"
+    crossorigin="anonymous">
+  <link href='https://fonts.googleapis.com/css?family=Lora:400,700,400italic,700italic' rel='stylesheet' type='text/css'>
+  <link href='https://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800'
+    rel='stylesheet' type='text/css'>
+  <link href="css/clean-blog.min.css" rel="stylesheet">
+
+</head>
+
+<body>
+
+  <!-- Navigation -->
+  <nav class="navbar navbar-expand-lg navbar-light fixed-top" id="mainNav">
+    <div class="container">
+      <a class="navbar-brand" href="index.html">KATPLUSH</a>
+      <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarResponsive"
+        aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+        Menu
+        <i class="fas fa-bars"></i>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarResponsive">
+        <ul class="navbar-nav ml-auto">
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownBlog" data-toggle="dropdown" aria-haspopup="true"
+              aria-expanded="false">
+              Blog
+            </a>
+            <div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdownBlog">
+              <a class="dropdown-item" href="post1.html">Post 1</a>
+              <a class="dropdown-item" href="post2.html">Post 2</a>
+              <a class="dropdown-item" href="post3.html">Post 3</a>
+              <a class="dropdown-item" href="post4.html">Post 4</a>
+              <a class="dropdown-item" href="post5.html">Post 5</a>
+            </div>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="about.html">About</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+
+  <!-- Page Header -->
+  <header class="masthead" style="background-image: url('img/5_seattle_header.jpg')">
+    <div class="overlay"></div>
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-8 col-md-10 mx-auto">
+          <div class="post-heading">
+            <h1>Evaluating Accessibility</h1>
+            <h2 class="subheading">Excited to share my thoughts and findings
+            </h2>
+            <span class="meta">Posted by
+              <a href="#">Katerina Plushko</a>
+              on May 5, 2019</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <!-- Post Content -->
+  <article>
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-8 col-md-10 mx-auto">
+          <p>This week I'm reveiwing and evaluating the accessibility metrics and features of a chosen site, using a number of testing tools as well as manual a manual review.  I have chosen to review Seattle's official travel and tourism site, <a href="https://www.visitseattle.org/">Visit Seattle</a>. The Visit Seattle web page has a large and wide audience, and it is important for the site to be accessible to multiple impairments</p> 
+          
+          <p>As James Byrd explained, in the <a href="https://www.youtube.com/watch?v=H37zF98Er1M&feature=youtu.be">Fullstack Academy video</a> on Web Accessibility Guidelines "The web is a lot like a public library, it's a giant store of information available to everyone that people from all over can go to.  But if you can't walk up the stairs, you'll have a bit of problem unless they've supplied an access ramp." </p>
+          <img class ="img-fluid" src="img/5_web_accessibility.png" alt="diagram of the web represented as a public library with steps and a ramp added">
+
+          <h2 class="section-heading">The Basics</h2>
+
+          <p>Let's start with some basics.  Knowing that you do not want to exclude visitors to your site with visual, hearing, learning and physical impairments is a good place to start.  There are a number of resources that a developer can access to learn how to build a site with the appropriate accessibility features that address multiple issues.  The <a href="https://www.w3.org/WAI/WCAG21/quickref/">W3 Web Content Accessibility Guidelines (WCAG)</a> are a great place to start. </p>
+          <p>Some agreed upon basics include:</p>
+          <ul>
+            <li>Adding alt text to all images, which helps screen readers </li>
+            <li>Organizing and assigning header tags in order</li>
+            <li>Adding label tags to form fields</li>
+            <li>Use high contrast colors between text and background</li>
+          </ul>
+          <p>Now let's see how my chosen site fared.</p>
+
+          <h2 class="section-heading">Site Analysis</h2>
+          <p>Aside from a manual review of the Visit Seattle page, I used two accessibility auditing tools to help with assessing the general accessibility of my chosen page.  The tools I used were <a href=" https://developers.google.com/web/fundamentals/accessibility/">Google's Lighthouse Accessibility Audit</a> technology available through Chrome DevTools and <a href" http://wave.webaim.org/">WebAim's Wave Web Accessibility Evaluation Tool</a>.</p>
+          <p>My initial manual review of the page found it easy on the eyes, the navigation was displayed with high contrast large clear font, there didn't seem too many moving/overlapping parts that can cause usability and accessibility issues. The page had a good amount of white space and the font used from headings to descriptions is mostly black on white, clean and bright visually. I did notice though that it was somewhat difficult to read some of the headlines that show up on top of the images through out the page and that there are a few places like the image credits where the font size is very small and the color contrast is poor but this was generally on photo credits. In general, to the naked eye the site looks like a model page, easy to use and visually appealing.</p>
+          <img class="img-fluid" src="img/5_seattle_home.JPG" alt="homepage of Visit Seattle displaying navigation and image carousel">
+          <p>Upon opening the the Chrome DevTools and running the Lighthouse audit I found that the page contained many more issues and actually had a fairly low accessibility score of 52.  The tool listed out the specific issues/opportunities that affected the accessibility score. Each one opened up on to show the specific elements with the mentioned error and the detail on how to fix the issue. Here were the seven issues highlighted:</p>
+         <ol>
+            <li>Buttons do not have an accessible name</li>
+            <li>Frame or iframe elements do not have a title</li>
+            <li>Image elements do not have [alt] attributes</li>
+            <li>Form elements do not have associated labels</li>
+            <li>Links do not have a discernible name</li>
+            <li>Background and foreground colors do not have a sufficient contrast ratio</li>
+            <li>Some elements have a [tabindex] value greater than 0</li>
+          </ol>
+          <img class ="img-fluid" src="img/5_lighthouse_audit.JPG" alt="Lighthouse auditing DevTool accessibility results detailed above">
+          <p>The Wave tool also showed that the page had multiple serious accessibility issues and allowed for a thorough review of the page with and without styles and all the areas where contrast was an issue.  The wave tool had some very handy features that explained the errors by "what it means, why it matters, how to fix it and a direct link to the guidelines being overlooked.  The Wave tool pointed out 55 high alert errors and 46 Contrast errors.  Below is a screen shot of the it's accessibility summary and user interface. </p>
+          <img class ="img-fluid" src="img/5_seattle_wave_results.JPG" alt="Wave web accessibility evaluation tool results for Visit Seattle home page. 55 Errors, 47 Alerts, 26 Features, 73 Structural Element, 21 HTML5 and ARIA, 46 Contrast Errors">
+          <h2 class="section-heading">Summary</h2>
+
+          <p>In summary, these accessibility tools helped identify multiple serious development misses pertaining to basic accessibility guidelines.  Some simple improvements that could be made would be adding alt attribute descriptions, adding labels to the form inputs and adding a gradient film to help with the number of contrast issues on images with text.</p>
+        </div>
+      </div>
+    </div>
+  </article>
+
+  <hr>
+
+  <!-- Footer -->
+  <footer>
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-8 col-md-10 mx-auto">
+          <ul class="list-inline text-center">
+            <li class="list-inline-item">
+              <a href="#">
+                <span class="fa-stack fa-lg">
+                  <i class="fas fa-circle fa-stack-2x"></i>
+                  <i class="fab fa-twitter fa-stack-1x fa-inverse"></i>
+                </span>
+              </a>
+            </li>
+            <li class="list-inline-item">
+              <a href="#">
+                <span class="fa-stack fa-lg">
+                  <i class="fas fa-circle fa-stack-2x"></i>
+                  <i class="fab fa-facebook-f fa-stack-1x fa-inverse"></i>
+                </span>
+              </a>
+            </li>
+            <li class="list-inline-item">
+              <a href="#">
+                <span class="fa-stack fa-lg">
+                  <i class="fas fa-circle fa-stack-2x"></i>
+                  <i class="fab fa-github fa-stack-1x fa-inverse"></i>
+                </span>
+              </a>
+            </li>
+          </ul>
+          <p class="copyright text-muted">Copyright &copy; Katplush 2019</p>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Bootstrap core JavaScript -->
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+    crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+    crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+    crossorigin="anonymous"></script>
+
+  <!-- Custom scripts for this template -->
+  <script src="js/clean-blog.min.js"></script>
+
+</body>
+
+</html>
