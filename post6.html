@@ -59,18 +59,18 @@
 
 
   <!-- Page Header -->
-  <header class="masthead" style="background-image: url('img/5_seattle_header.jpg')">
+  <header class="masthead" style="background-image: url('img/yellow_flowers_short.JPG')">
     <div class="overlay"></div>
     <div class="container">
       <div class="row">
         <div class="col-lg-8 col-md-10 mx-auto">
           <div class="post-heading">
-            <h1>Evaluating Accessibility</h1>
+            <h1>User Science Journal Accessibility Analysis</h1>
             <h2 class="subheading">Excited to share my thoughts and findings
             </h2>
             <span class="meta">Posted by
               <a href="#">Katerina Plushko</a>
-              on May 5, 2019</span>
+              on May 12, 2019</span>
           </div>
         </div>
       </div>
@@ -82,14 +82,29 @@
     <div class="container">
       <div class="row">
         <div class="col-lg-8 col-md-10 mx-auto">
-          <p>This week I'm reveiwing and evaluating the accessibility metrics and features of a chosen site, using a number of testing tools as well as manual a manual review.  I have chosen to review Seattle's official travel and tourism site, <a href="https://www.visitseattle.org/">Visit Seattle</a>. The Visit Seattle web page has a large and wide audience, and it is important for the site to be accessible to multiple impairments</p> 
+          <p>The following is a report on the accessibility of this particular User Science Journal and a review of some of the issues I discovered when running it through both the <a href="https://developers.google.com/web/tools/lighthouse/" target="_blank">Lighthouse</a> Chrome dev tool and the <a href="https://wave.webaim.org/extension/" target="_blank">WAVE</a> web accessibility evaluation tool.</p> 
           
-          <p>As James Byrd explained, in the <a href="https://www.youtube.com/watch?v=H37zF98Er1M&feature=youtu.be">Fullstack Academy video</a> on Web Accessibility Guidelines "The web is a lot like a public library, it's a giant store of information available to everyone that people from all over can go to.  But if you can't walk up the stairs, you'll have a bit of problem unless they've supplied an access ramp." </p>
-          <img class ="img-fluid" src="img/5_web_accessibility.png" alt="diagram of the web represented as a public library with steps and a ramp added">
+          <h2 class="section-heading">The Audit</h2>
+          <p>At the time of this writing, my index.html <a href="http://www.katplush.com/user-sci-journal/">home page</a> had not been updated much from the original template provided, but upon analysis showed that it needed some basic accessablity improvements.</p>
+          <p>I ran an audit on it using the Chrome DevTools Lighthouse analysis tool, which brought up a 78% accessibilty grade for my page with to primary issues impacting the score</p>
+          <ol>
+            <li><b>Background and foreground colors do not have a sufficient contrast ratio.</b> Pointing out the low contrast of the text "Posted by" and "on date" which can be an issue for most users, especially ones with low vision.</li>
+            <p><img class ="img-fluid" src="img/p6Contrast.png" alt="Low contrast warning pointing out the low contrast of the text Posted by and on date">
+            </p>
+            <li><b>Links do not have a discernible name.</b> Pointing out the social media links for Twitter, Facebook and GitHub were missing link text, the lack of which can cause confusion for keyboard and screen reader users.</li>
+            <p><img class ="img-fluid" src="img/p6LinkLabel.png" alt="Missing link text warning pointing out the low contrast of the text Posted by and on date"></p>
+        
+          <p>I also audited the  <a href="http://www.katplush.com/user-sci-journal/post4.html">Post 4</a> page of my user science journal. This page recieved a slightly higher score of 88 on the Lighthouse auditing tool due to the contrast issue mentioned above not being an issue but there were a few additional items pointed out by the WAVE tool.</p>
+        
+            <li><b>Linked image missing alternative text.</b> Which pointed out that the image I had posted had no alt text describing the image, which makes it impossible for the screen reader to describe the image to the user.</li>
+            <p><img class ="img-fluid" src="img/p6AltText.png" alt="Missing link text warning pointing out the low contrast of the text Posted by and on date"></p>
+            <li><b>Skipped heading level.</b> This error pointed out that my last heading was labeled with an "h4" tag when the preceding heading was an "h2" tag. This can cause confusion for users  when navigatin using keyboard assistive technology.</li>
+            <p><img class ="img-fluid" src="img/p6Heading.png" alt="Missing link text warning pointing out the low contrast of the text Posted by and on date"></p>
+          </ol>
+          <p>Over all the issues listed above are not difficutl to fix but can be easily over looked when a developer is either rushed or simply unaware.</p>
 
-          <h2 class="section-heading">The Basics</h2>
-
-          <p>Let's start with some basics.  Knowing that you do not want to exclude visitors to your site with visual, hearing, learning and physical impairments is a good place to start.  There are a number of resources that a developer can access to learn how to build a site with the appropriate accessibility features that address multiple issues.  The <a href="https://www.w3.org/WAI/WCAG21/quickref/">W3 Web Content Accessibility Guidelines (WCAG)</a> are a great place to start. </p>
+          <h2 class="section-heading">The Fix</h2>
+          <p><a href="https://www.w3.org/WAI/WCAG21/quickref/">W3 Web Content Accessibility Guidelines (WCAG)</a> are a great place to start. </p>
           <p>Some agreed upon basics include:</p>
           <ul>
             <li>Adding alt text to all images, which helps screen readers </li>
@@ -133,7 +148,7 @@
         <div class="col-lg-8 col-md-10 mx-auto">
           <ul class="list-inline text-center">
             <li class="list-inline-item">
-              <a href="#">
+              <a href="https://www.twitter.com" aria-label="go to twitter.com">
                 <span class="fa-stack fa-lg">
                   <i class="fas fa-circle fa-stack-2x"></i>
                   <i class="fab fa-twitter fa-stack-1x fa-inverse"></i>
@@ -141,7 +156,7 @@
               </a>
             </li>
             <li class="list-inline-item">
-              <a href="#">
+              <a href="https://www.facebook.com/" aria-label="go to facebook.com">
                 <span class="fa-stack fa-lg">
                   <i class="fas fa-circle fa-stack-2x"></i>
                   <i class="fab fa-facebook-f fa-stack-1x fa-inverse"></i>
@@ -149,7 +164,7 @@
               </a>
             </li>
             <li class="list-inline-item">
-              <a href="#">
+              <a href="https://github.com/katplush" aria-label="go to Katerina's GitHub page">
                 <span class="fa-stack fa-lg">
                   <i class="fas fa-circle fa-stack-2x"></i>
                   <i class="fab fa-github fa-stack-1x fa-inverse"></i>
