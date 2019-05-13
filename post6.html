@@ -86,7 +86,7 @@
           
           <h2 class="section-heading">The Audit</h2>
           <p>At the time of this writing, my index.html <a href="http://www.katplush.com/user-sci-journal/">home page</a> had not been updated much from the original template provided, but upon analysis showed that it needed some basic accessablity improvements.</p>
-          <p>I ran an audit on it using the Chrome DevTools Lighthouse analysis tool, which brought up a 78% accessibilty grade for my page with to primary issues impacting the score</p>
+          <p>I ran an audit on it using the Chrome DevTools Lighthouse analysis tool, which brought up a 78% accessibility grade for my page with to primary issues impacting the score</p>
           <ol>
             <li><b>Background and foreground colors do not have a sufficient contrast ratio.</b> Pointing out the low contrast of the text "Posted by" and "on date" which can be an issue for most users, especially ones with low vision.</li>
             <p><img class ="img-fluid" src="img/p6Contrast.png" alt="Low contrast warning pointing out the low contrast of the text Posted by and on date">
@@ -94,11 +94,11 @@
             <li><b>Links do not have a discernible name.</b> Pointing out the social media links for Twitter, Facebook and GitHub were missing link text, the lack of which can cause confusion for keyboard and screen reader users.</li>
             <p><img class ="img-fluid" src="img/p6LinkLabel.png" alt="Missing link text warning pointing out the low contrast of the text Posted by and on date"></p>
         
-          <p>I also audited the  <a href="http://www.katplush.com/user-sci-journal/post4.html">Post 4</a> page of my user science journal. This page recieved a slightly higher score of 88 on the Lighthouse auditing tool due to the contrast issue mentioned above not being an issue but there were a few additional items pointed out by the WAVE tool.</p>
+          <p>I also audited the  <a href="http://www.katplush.com/user-sci-journal/post4.html">Post 4</a> page of my user science journal. This page received a slightly higher score of 88 on the Lighthouse auditing tool due to the contrast issue mentioned above not being an issue but there were a few additional items pointed out by the WAVE tool.</p>
         
             <li><b>Linked image missing alternative text.</b> Which pointed out that the image I had posted had no alt text describing the image, which makes it impossible for the screen reader to describe the image to the user.</li>
             <p><img class ="img-fluid" src="img/p6AltText.png" alt="Missing link text warning pointing out the low contrast of the text Posted by and on date"></p>
-            <li><b>Skipped heading level.</b> This error pointed out that my last heading was labeled with an "h4" tag when the preceding heading was an "h2" tag. This can cause confusion for users  when navigatin using keyboard assistive technology.</li>
+            <li><b>Skipped heading level.</b> This error pointed out that my last heading was labeled with an "h4" tag when the preceding heading was an "h2" tag. This can cause confusion for users when navigating using keyboard assistive technology.</li>
             <p><img class ="img-fluid" src="img/p6Heading.png" alt="Missing link text warning pointing out the low contrast of the text Posted by and on date"></p>
           </ol>
           <p>Over all the issues listed above are not difficult to fix but can be easily over looked when a developer is either rushed or simply unaware.</p>
@@ -106,12 +106,12 @@
           <h2 class="section-heading">The Fix</h2>
           <p>Listed below are the solutions to the issues listed above:</p>
           <ol>
-            <li>For the contrast issue, I found the particualr .post-meta class in the css file and changed the text color from light gray to black, increasing the contrast to meet accessablity guidelines.</li>
-            <li>For the social media links I added urls and aria-labels that advise what will happen if the link is clicked. For examle the aria-label for the GitHub icon says "go to Katerina's GitHub".</li>
+            <li>For the contrast issue, I found the .post-meta class in the css file and changed the text color from light gray to black, increasing the contrast to meet accessability guidelines.</li>
+            <li>For the social media links I added urls and aria-labels that advise what will happen if the link is clicked. For example the aria-label for the GitHub icon says "go to Katerina's GitHub".</li>
             <li>For the missing Alt text on the image on Post 4, I added a description of what the image is.</li>
             <li>For the skipped heading level, I opted to change the heading tag to a "P" tag and bold the line instead of changing to a "h3" tag, thought the h3 tag could have been manipulated in the css file if I still wanted to use a heading tag and have it standout.</li>
           </ol>
-          <p>All of these fixes took less than 5 minutes to complete, showing that it doesn't take much to improve much.</p>
+          <p>Once these changes were completed, I reran both the homepage and the Post 4 page through both the Lighthouse audit and the WAVE tool.  The Lighthouse audit gave both pages a score of 100 for accessibility and listed no additional warnings.  The Wave tool which was previously returning 4 errors, was now returning none. All of these fixes took less than 5 minutes to complete, showing that it doesn't take much to improve much. </p>
         </div>
       </div>
     </div>
