@@ -101,39 +101,17 @@
             <li><b>Skipped heading level.</b> This error pointed out that my last heading was labeled with an "h4" tag when the preceding heading was an "h2" tag. This can cause confusion for users  when navigatin using keyboard assistive technology.</li>
             <p><img class ="img-fluid" src="img/p6Heading.png" alt="Missing link text warning pointing out the low contrast of the text Posted by and on date"></p>
           </ol>
-          <p>Over all the issues listed above are not difficutl to fix but can be easily over looked when a developer is either rushed or simply unaware.</p>
+          <p>Over all the issues listed above are not difficult to fix but can be easily over looked when a developer is either rushed or simply unaware.</p>
 
           <h2 class="section-heading">The Fix</h2>
-          <p><a href="https://www.w3.org/WAI/WCAG21/quickref/">W3 Web Content Accessibility Guidelines (WCAG)</a> are a great place to start. </p>
-          <p>Some agreed upon basics include:</p>
-          <ul>
-            <li>Adding alt text to all images, which helps screen readers </li>
-            <li>Organizing and assigning header tags in order</li>
-            <li>Adding label tags to form fields</li>
-            <li>Use high contrast colors between text and background</li>
-          </ul>
-          <p>Now let's see how my chosen site fared.</p>
-
-          <h2 class="section-heading">Site Analysis</h2>
-          <p>Aside from a manual review of the Visit Seattle page, I used two accessibility auditing tools to help with assessing the general accessibility of my chosen page.  The tools I used were <a href=" https://developers.google.com/web/fundamentals/accessibility/">Google's Lighthouse Accessibility Audit</a> technology available through Chrome DevTools and <a href" http://wave.webaim.org/">WebAim's Wave Web Accessibility Evaluation Tool</a>.</p>
-          <p>My initial manual review of the page found it easy on the eyes, the navigation was displayed with high contrast large clear font, there didn't seem too many moving/overlapping parts that can cause usability and accessibility issues. The page had a good amount of white space and the font used from headings to descriptions is mostly black on white, clean and bright visually. I did notice though that it was somewhat difficult to read some of the headlines that show up on top of the images through out the page and that there are a few places like the image credits where the font size is very small and the color contrast is poor but this was generally on photo credits. In general, to the naked eye the site looks like a model page, easy to use and visually appealing.</p>
-          <img class="img-fluid" src="img/5_seattle_home.JPG" alt="homepage of Visit Seattle displaying navigation and image carousel">
-          <p>Upon opening the the Chrome DevTools and running the Lighthouse audit I found that the page contained many more issues and actually had a fairly low accessibility score of 52.  The tool listed out the specific issues/opportunities that affected the accessibility score. Each one opened up on to show the specific elements with the mentioned error and the detail on how to fix the issue. Here were the seven issues highlighted:</p>
-         <ol>
-            <li>Buttons do not have an accessible name</li>
-            <li>Frame or iframe elements do not have a title</li>
-            <li>Image elements do not have [alt] attributes</li>
-            <li>Form elements do not have associated labels</li>
-            <li>Links do not have a discernible name</li>
-            <li>Background and foreground colors do not have a sufficient contrast ratio</li>
-            <li>Some elements have a [tabindex] value greater than 0</li>
+          <p>Listed below are the solutions to the issues listed above:</p>
+          <ol>
+            <li>For the contrast issue, I found the particualr .post-meta class in the css file and changed the text color from light gray to black, increasing the contrast to meet accessablity guidelines.</li>
+            <li>For the social media links I added urls and aria-labels that advise what will happen if the link is clicked. For examle the aria-label for the GitHub icon says "go to Katerina's GitHub".</li>
+            <li>For the missing Alt text on the image on Post 4, I added a description of what the image is.</li>
+            <li>For the skipped heading level, I opted to change the heading tag to a "P" tag and bold the line instead of changing to a "h3" tag, thought the h3 tag could have been manipulated in the css file if I still wanted to use a heading tag and have it standout.</li>
           </ol>
-          <img class ="img-fluid" src="img/5_lighthouse_audit.JPG" alt="Lighthouse auditing DevTool accessibility results detailed above">
-          <p>The Wave tool also showed that the page had multiple serious accessibility issues and allowed for a thorough review of the page with and without styles and all the areas where contrast was an issue.  The wave tool had some very handy features that explained the errors by "what it means, why it matters, how to fix it and a direct link to the guidelines being overlooked.  The Wave tool pointed out 55 high alert errors and 46 Contrast errors.  Below is a screen shot of the it's accessibility summary and user interface. </p>
-          <img class ="img-fluid" src="img/5_seattle_wave_results.JPG" alt="Wave web accessibility evaluation tool results for Visit Seattle home page. 55 Errors, 47 Alerts, 26 Features, 73 Structural Element, 21 HTML5 and ARIA, 46 Contrast Errors">
-          <h2 class="section-heading">Summary</h2>
-
-          <p>In summary, these accessibility tools helped identify multiple serious development misses pertaining to basic accessibility guidelines.  Some simple improvements that could be made would be adding alt attribute descriptions, adding labels to the form inputs and adding a gradient film to help with the number of contrast issues on images with text.</p>
+          <p>All of these fixes took less than 5 minutes to complete, showing that it doesn't take much to improve much.</p>
         </div>
       </div>
     </div>
