@@ -17,6 +17,9 @@
     gtag('config', 'UA-140405768-1');
   </script>
 
+  <!-- Sign-up form JS -->
+  <script async src="js/modal.js"></script>
+
 
   <title>User Science Journal</title>
 
@@ -30,25 +33,29 @@
   <link href='https://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800'
     rel='stylesheet' type='text/css'>
 
+  <!-- Sign-up Form CSS -->
+  <link href="css/modal.css" rel="stylesheet" type='text/css'>
+
   <!-- Custom styles for this template -->
   <link href="css/clean-blog.min.css" rel="stylesheet">
-  <link rel="apple-touch-icon" sizes="57x57" href="apple-icon-57x57.png">
-  <link rel="apple-touch-icon" sizes="60x60" href="apple-icon-60x60.png">
-  <link rel="apple-touch-icon" sizes="72x72" href="apple-icon-72x72.png">
-  <link rel="apple-touch-icon" sizes="76x76" href="apple-icon-76x76.png">
-  <link rel="apple-touch-icon" sizes="114x114" href="apple-icon-114x114.png">
-  <link rel="apple-touch-icon" sizes="120x120" href="apple-icon-120x120.png">
-  <link rel="apple-touch-icon" sizes="144x144" href="apple-icon-144x144.png">
-  <link rel="apple-touch-icon" sizes="152x152" href="apple-icon-152x152.png">
-  <link rel="apple-touch-icon" sizes="180x180" href="apple-icon-180x180.png">
-  <link rel="icon" type="image/png" sizes="192x192" href="android-icon-192x192.png">
-  <link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png">
-  <link rel="icon" type="image/png" sizes="96x96" href="favicon-96x96.png">
-  <link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png">
+  <link rel="apple-touch-icon" sizes="57x57" href="img/apple-icon-57x57.png">
+  <link rel="apple-touch-icon" sizes="60x60" href="img/apple-icon-60x60.png">
+  <link rel="apple-touch-icon" sizes="72x72" href="img/apple-icon-72x72.png">
+  <link rel="apple-touch-icon" sizes="76x76" href="img/apple-icon-76x76.png">
+  <link rel="apple-touch-icon" sizes="114x114" href="img/apple-icon-114x114.png">
+  <link rel="apple-touch-icon" sizes="120x120" href="img/apple-icon-120x120.png">
+  <link rel="apple-touch-icon" sizes="144x144" href="img/apple-icon-144x144.png">
+  <link rel="apple-touch-icon" sizes="152x152" href="img/apple-icon-152x152.png">
+  <link rel="apple-touch-icon" sizes="180x180" href="img/apple-icon-180x180.png">
+  <link rel="icon" type="image/png" sizes="192x192" href="img/android-icon-192x192.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="img/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="96x96" href="img/favicon-96x96.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="img/favicon-16x16.png">
   <link rel="manifest" href="manifest.json">
   <meta name="msapplication-TileColor" content="#ffffff">
-  <meta name="msapplication-TileImage" content="ms-icon-144x144.png">
+  <meta name="msapplication-TileImage" content="img/ms-icon-144x144.png">
   <meta name="theme-color" content="#ffffff">
+
 
 </head>
 
@@ -76,13 +83,16 @@
               Blog
             </a>
             <div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdownBlog">
-                <a class="dropdown-item" href="post1.html">Post 1 - Analysis for Usablity</a>
-                <a class="dropdown-item" href="post2.html">Post 2 - Usable Design Analysis</a>
-                <a class="dropdown-item" href="post3.html">Post 3 - Usability Test</a>
-                <a class="dropdown-item" href="post4.html">Post 4 - Mobile Usability Test</a>
-                <a class="dropdown-item" href="post5.html">Post 5 - Evaluating Accessibility</a>
-                <a class="dropdown-item" href="post6.html">Post 6 - Adding Accessibility Features</a>
-                <a class="dropdown-item" href="post7.html">Post 7 - Adding Analytics</a>
+              <a class="dropdown-item" href="index.html">Home</a>
+              <a class="dropdown-item" href="post1.html">Post 1 - Analysis for Usability</a>
+              <a class="dropdown-item" href="post2.html">Post 2 - Usable Design Analysis</a>
+              <a class="dropdown-item" href="post3.html">Post 3 - Usability Test</a>
+              <a class="dropdown-item" href="post4.html">Post 4 - Mobile Usability Test</a>
+              <a class="dropdown-item" href="post5.html">Post 5 - Evaluating Accessibility</a>
+              <a class="dropdown-item" href="post6.html">Post 6 - Adding Accessibility Features</a>
+              <a class="dropdown-item" href="post7.html">Post 7 - Adding Analytics</a>
+              <a class="dropdown-item" href="post8.html">Post 8 - Setting Goals with Google Analytics</a>
+              <a class="dropdown-item" href="post9.html">Post 9 - Content Experiment</a>
             </div>
           </li>
           <li class="nav-item">
@@ -101,7 +111,7 @@
         <div class="col-lg-8 col-md-10 mx-auto">
           <div class="site-heading">
             <h1>User Science Journal</h1>
-            <span class="subheading">Reflections on Accessbility and Analytics</span>
+            <span class="subheading">Reflections on Accessability and Analytics</span>
 
           </div>
 
@@ -111,14 +121,32 @@
   </header>
 
   <!-- Main Content -->
+  <!-- Button to open the modal -->
+<button onclick="document.getElementById('id01').style.display='block'">Sign Up for Kat Mail</button>
+
+<!-- The Modal (contains the Sign Up form) -->
+<div id="id01" class="modal">
+  <span onclick="document.getElementById('id01').style.display='none'" class="close" title="Close Modal"></span>
+  <form class="modal-content" action="index.html">
+    <div class="container">
+      <h1>Sign Up</h1>
+      <p>Please fill in this form to be added to the mailing list.</p>
+      <hr>
+      <label for="name"><b>Name</b></label>
+      <input type="text" placeholder="Enter Name" name="name" required>
+      
+      <label for="email"><b>Email</b></label>
+      <input type="text" placeholder="Enter Email" name="email" required>
+
+      <div class="clearfix">
+        <button type="submit" class="signup">Sign Up</button>
+        <button type="button" onclick="document.getElementById('id01').style.display='none'" class="cancelbtn">Cancel</button>
+      </div>
+    </div>
+  </form>
+</div>
   <div class="container">
     <div class="row">
-      <div class="col-lg-4 col-md-12">
-        <div class="list-group">
-          <a href="index.html" class="list-group-item">Secrets</a>
-        </div>
-      </div>
-
       <div class="col-lg-8 col-md-12 mx-auto">
         <div class="post-preview">
           <a href="post1.html">
