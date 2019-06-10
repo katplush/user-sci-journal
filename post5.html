@@ -16,6 +16,22 @@
 
     gtag('config', 'UA-140405768-1');
   </script>
+  <script>
+    /**
+    * Function that registers a click on an outbound link in Analytics.
+    * This function takes a valid URL string as an argument, and uses that URL string
+    * as the event label. Setting the transport method to 'beacon' lets the hit be sent
+    * using 'navigator.sendBeacon' in browser that support it.
+    */
+    var getOutboundLink = function(url) {
+      gtag('event', 'click', {
+        'event_category': 'outbound',
+        'event_label': url,
+        'transport_type': 'beacon',
+        'event_callback': function(){document.location = url;}
+      });
+    }
+  </script>
 
   <title>User Science Journal</title>
 
@@ -96,7 +112,8 @@
     <div class="container">
       <div class="row">
         <div class="col-lg-8 col-md-10 mx-auto">
-          <a href="doc/evaluatingAccessibility.pdf" target="_blank"><b>Download Post</b></a>
+          <a href="http://www.katplush.com/user-sci-journal/doc/evaluatingAccessibility.pdf"   onclick="getOutboundLink('http://www.katplush.com/user-sci-journal/doc/evaluatingAccessibility.pdf'); return false;" target="_blank"><b>Download Post</b></a>
+          
           <p>This week I'm reviewing and evaluating the accessibility metrics and features of a chosen site, using a number of testing tools as well as manual a manual review.  I have chosen to review Seattle's official travel and tourism site, <a href="https://www.visitseattle.org/">Visit Seattle</a>. The Visit Seattle web page has a large and wide audience, and it is important for the site to be accessible to multiple impairments</p> 
           
           <p>As James Byrd explained, in the <a href="https://www.youtube.com/watch?v=H37zF98Er1M&feature=youtu.be">Fullstack Academy video</a> on Web Accessibility Guidelines "The web is a lot like a public library, it's a giant store of information available to everyone that people from all over can go to.  But if you can't walk up the stairs, you'll have a bit of problem unless they've supplied an access ramp." </p>

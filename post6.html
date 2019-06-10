@@ -16,6 +16,22 @@
 
     gtag('config', 'UA-140405768-1');
   </script>
+  <script>
+    /**
+    * Function that registers a click on an outbound link in Analytics.
+    * This function takes a valid URL string as an argument, and uses that URL string
+    * as the event label. Setting the transport method to 'beacon' lets the hit be sent
+    * using 'navigator.sendBeacon' in browser that support it.
+    */
+    var getOutboundLink = function(url) {
+      gtag('event', 'click', {
+        'event_category': 'outbound',
+        'event_label': url,
+        'transport_type': 'beacon',
+        'event_callback': function(){document.location = url;}
+      });
+    }
+  </script>
 
   <title>User Science Journal</title>
 
@@ -96,7 +112,8 @@
     <div class="container">
       <div class="row">
         <div class="col-lg-8 col-md-10 mx-auto">
-          <a href="doc/usjAccessibilityAnalysis.pdf" target="_blank"><b>Download Post</b></a>
+          <a href="http://www.katplush.com/user-sci-journal/doc/usjAccessibilityAnalysis.pdf"   onclick="getOutboundLink('http://www.katplush.com/user-sci-journal/doc/usjAccessibilityAnalysis.pdf'); return false;" target="_blank"><b>Download Post</b></a>
+          
           <p>The following is a report on the accessibility of this particular User Science Journal and a review of some of the issues I discovered when running it through both the <a href="https://developers.google.com/web/tools/lighthouse/" target="_blank">Lighthouse</a> Chrome dev tool and the <a href="https://wave.webaim.org/extension/" target="_blank">WAVE</a> web accessibility evaluation tool.</p> 
           
           <h2 class="section-heading">The Audit</h2>
