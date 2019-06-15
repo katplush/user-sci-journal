@@ -39,6 +39,24 @@ a:focus, a:hover {
   color: #0085A1;
 }
 
+a[download] {
+  color: hsla(216, 70%, 53%, 1);
+  text-decoration: underline;
+}
+
+a[download]::before {
+  content: url('../img/download.png');
+  height: 1em;
+  position: relative;
+  top: 0.75em;
+  right: 0.5em;
+  width: 1em;
+}
+
+a[download]:hover,
+a[download]:focus {
+  text-decoration: none;
+}
 blockquote {
   font-style: italic;
   color: #868e96;
