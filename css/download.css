@@ -16,3 +16,8 @@ a[download]:hover,
 a[download]:focus {
   text-decoration: none;
 }
+
+.enlarge:hover {
+	transform:scale(1.5,1.5);
+	transform-origin:0 0;
+}

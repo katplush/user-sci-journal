@@ -29,6 +29,7 @@
   <link href='https://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800'
     rel='stylesheet' type='text/css'>
   <link href="css/clean-blog.min.css" rel="stylesheet">
+  <link href="css/download.css" rel="stylesheet">
 
 </head>
 
@@ -73,7 +74,7 @@
 
 
   <!-- Page Header -->
-  <header class="masthead" style="background-image: url('img/brainstorming.jpg')">
+  <header class="masthead" style="background-image: url('img/8_header2.jpg')">
     <div class="overlay"></div>
     <div class="container">
       <div class="row">
@@ -96,37 +97,27 @@
     <div class="container">
       <div class="row">
         <div class="col-lg-8 col-md-10 mx-auto">
-          <p><b>Oops, no content yet. Come back soon.</b></p>
-          <p>In the meantime, check out my post on <a href="post3.html">Usability Testing</a></p>
-          <!-- <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Saepe nostrum ullam eveniet pariatur voluptates odit, fuga atque ea nobis sit soluta odio, adipisci quas excepturi maxime quae totam ducimus consectetur?</p>
-          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eius praesentium recusandae illo eaque architecto error, repellendus iusto reprehenderit, doloribus, minus sunt. Numquam at quae voluptatum in officia voluptas voluptatibus, minus!</p>
-          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aut consequuntur magnam, excepturi aliquid eitaque esse est vero natus quae optio aperiam soluta voluptatibus corporis atque iste neque sit tempora!</p>
+          <p>Once I had set up my Google Analytics account and got my self comfortable with it, it was time to add some goal tracking.  I decided I would add a Mailing List sign up button and form as well as create PDFs of my posts and incorporate a link to allow visitors to easily download my sage observations.</p>
+          
+          <p>To do both of these required two different process.  I found that creating the destination goal for my Mailing List sign up was a bit of an easier task so lets start there.  To begin I inserted a modal sign up button onto my index.html page, which pops up a for requesting the visitors name and email and a sign-up or cancel button below that.  If the visitor clicks sign-up they are taken to my thanks.html page.</p>  
+              
+          <img class ="img-fluid enlarge" src="img/8_sign_up.png" alt="Screen shot of the home page Sign Up for Mail button, the Modal Sign-up form that pops up and the thanks.html page">
+              
+          <p>The goal for this type of tracking is set up in the "Goals" section of my Google Analytics Admin page.  I selected "Destination" as my goal type since on of the easiest ways to track this goal to completion would be to track if the visitor makes it to the thanks.html page.  This way we know not only did they click on the Mailing List button but they actually went through with the sign-up. I set my Goal destination to "Begins with" and URL for the thanks.html page minus the domain portion of the address "/user-sci-journal/thanks".</p>
+              
+          <img class ="img-fluid enlarge" src="img/8_goal.png" alt="Screen shot of the goal setup page, with /user-sci-journal/thanks as the destination URL">
+              
+          <p>It took about 24 hrs before I could see the data under the  "Conversions" reports tab, once it did I could see exactly how many visitors made it to that thanks.html page.</p>
+              
+          <img class ="img-fluid enlarge" src="img/8_goal_completions.png" alt="Screen shot of the Conversion report that shows 7 completions of the set sign-up goal">
           
           <h2 class="section-heading">The Final Frontier</h2>
 
-          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Saepe nostrum ullam eveniet pariatur voluptates odit, fuga atque ea nobis sit soluta odio, adipisci quas excepturi maxime quae totam ducimus consectetur?</p>
-          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eius praesentium recusandae illo eaque architecto error, repellendus iusto reprehenderit, doloribus, minus sunt. Numquam at quae voluptatum in officia voluptas voluptatibus, minus!</p>
+         
 
           <blockquote class="blockquote">Blah Blah Blah</blockquote>
 
-          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Saepe nostrum ullam eveniet pariatur voluptates odit, fuga atque ea nobis sit soluta odio, adipisci quas excepturi maxime quae totam ducimus consectetur?</p>
-
           <h2 class="section-heading">Reaching for the Stars</h2>
-
-          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eius praesentium recusandae illo eaque architecto error, repellendus iusto reprehenderit, doloribus, minus sunt. Numquam at quae voluptatum in officia voluptas voluptatibus, minus!</p>
-          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aut consequuntur magnam, excepturi aliquid eitaque esse est vero natus quae optio aperiam soluta voluptatibus corporis atque iste neque sit tempora!</p>
-
-          <a href="#">
-            <img class="img-fluid" src="img/post-sample-image.jpg" alt="">
-          </a>
-          <span class="caption text-muted">This is just filler text</span>
-
-          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eius praesentium recusandae illo eaque architecto error, repellendus iusto reprehenderit, doloribus, minus sunt. Numquam at quae voluptatum in officia voluptas voluptatibus, minus!</p>
-          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aut consequuntur magnam, excepturi aliquid eitaque esse est vero natus quae optio aperiam soluta voluptatibus corporis atque iste neque sit tempora!</p>
-
-          <p>Placeholder text by
-            <a href="http://spaceipsum.com/">Space Ipsum</a>. Photographs by
-            <a href="https://www.flickr.com/photos/nasacommons/">NASA on The Commons</a>.</p> -->
         </div>
       </div>
     </div>
