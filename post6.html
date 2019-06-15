@@ -2,11 +2,6 @@
 <html lang="en">
 
 <head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-  <meta name="description" content="">
-  <meta name="author" content="">
-
   <!-- Global site tag (gtag.js) - Google Analytics -->
   <script async src="https://www.googletagmanager.com/gtag/js?id=UA-140405768-1"></script>
   <script>
@@ -28,10 +23,14 @@
         'event_category': 'outbound',
         'event_label': url,
         'transport_type': 'beacon',
-        'event_callback': function(){document.location = url;}
+        // 'event_callback': function(){document.location = url;}
       });
     }
   </script>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta name="description" content="">
+  <meta name="author" content="">
 
   <title>User Science Journal</title>
 
@@ -45,7 +44,6 @@
   <link href='https://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800'
     rel='stylesheet' type='text/css'>
   <link href="css/clean-blog.min.css" rel="stylesheet">
-
 </head>
 
 <body>
@@ -112,7 +110,7 @@
     <div class="container">
       <div class="row">
         <div class="col-lg-8 col-md-10 mx-auto">
-          <a href="http://www.katplush.com/user-sci-journal/doc/usjAccessibilityAnalysis.pdf"   onclick="getOutboundLink('http://www.katplush.com/user-sci-journal/doc/usjAccessibilityAnalysis.pdf'); return false;" target="_blank"><b>Download Post</b></a>
+          <a href="doc/usjAccessibilityAnalysis.pdf"   onclick="getOutboundLink('/usjAccessibilityAnalysis.pdf'); return true;" target="_blank"><b>Download Post</b></a>
           
           <p>The following is a report on the accessibility of this particular User Science Journal and a review of some of the issues I discovered when running it through both the <a href="https://developers.google.com/web/tools/lighthouse/" target="_blank">Lighthouse</a> Chrome dev tool and the <a href="https://wave.webaim.org/extension/" target="_blank">WAVE</a> web accessibility evaluation tool.</p> 
           

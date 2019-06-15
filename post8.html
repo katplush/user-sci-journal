@@ -30,7 +30,6 @@
     rel='stylesheet' type='text/css'>
   <link href="css/clean-blog.min.css" rel="stylesheet">
   <link href="css/download.css" rel="stylesheet">
-
 </head>
 
 <body>
@@ -97,9 +96,15 @@
     <div class="container">
       <div class="row">
         <div class="col-lg-8 col-md-10 mx-auto">
+          <blockquote class="blockquote">“A goal properly set is halfway reached.”
+          – Zig Ziglar</blockquote>
           <p>Once I had set up my Google Analytics account and got my self comfortable with it, it was time to add some goal tracking.  I decided I would add a Mailing List sign up button and form as well as create PDFs of my posts and incorporate a link to allow visitors to easily download my sage observations.</p>
           
-          <p>To do both of these required two different process.  I found that creating the destination goal for my Mailing List sign up was a bit of an easier task so lets start there.  To begin I inserted a modal sign up button onto my index.html page, which pops up a for requesting the visitors name and email and a sign-up or cancel button below that.  If the visitor clicks sign-up they are taken to my thanks.html page.</p>  
+          <p>To do both of these required two different process.  I found that creating the destination goal for my Mailing List sign up was a bit of an easier task so lets start there.</p>  
+          
+          <h2 class="section-heading">Goals</h2>  
+          
+          <p>To begin I inserted a modal sign up button onto my index.html page, which pops up a for requesting the visitors name and email and a sign-up or cancel button below that.  If the visitor clicks sign-up they are taken to my thanks.html page.</p>  
               
           <img class ="img-fluid enlarge" src="img/8_sign_up.png" alt="Screen shot of the home page Sign Up for Mail button, the Modal Sign-up form that pops up and the thanks.html page">
               
@@ -111,13 +116,23 @@
               
           <img class ="img-fluid enlarge" src="img/8_goal_completions.png" alt="Screen shot of the Conversion report that shows 7 completions of the set sign-up goal">
           
-          <h2 class="section-heading">The Final Frontier</h2>
+          <h2 class="section-heading">Events</h2>
 
-         
+          <p>I also wanted to track track how many visitors would download the PDF files of my posts so I looked into how to track a specific link click. I uploaded PDF versions of my posts and then linked to them with a "Download Post" link placed right at the top under the heading of posts 3-7.</p> 
 
-          <blockquote class="blockquote">Blah Blah Blah</blockquote>
+          <img class="img-fluid" src="img/8_downloadPost.png" alt="Image showing location of 'Download Post' link under Post title, link design is black and no underline">
 
-          <h2 class="section-heading">Reaching for the Stars</h2>
+          <p>To track clicks on these "Download Post" links I had to add some additional JavaScript and HTML code to all the pages I wanted to track.  I found the code needed <a href="https://support.google.com/analytics/answer/7478520?hl=en" target="_blank">Track Outbound Links</a> article from from Google Analytics Support.  I added the code found in this document, also seen in the image below with initiated the click tracking on the Download links.</p>
+
+          <img class="img-fluid enlarge" src="img/8_eventCode.png" alt="Javascript and HTML code needed to track the outbound links found in the Track Outbound Links article linked above">
+
+          <p>Once this code was added it wasn't long before I could see the tracked outbound events showing up under the Behavior reports tab. The Events report provides an overview which provides the number of total events and the events category, which in my case is outbound.  The Top Events report can be or the Pages report both show which posts were most popular based on downloads. It was clear to see the my Post 7 was the winner on number of times that download link was clicked.  The Event Label was set to the URL of the PDF being downloaded so the reports show the exact URL of each PDF that was selected.  An Events Flow report is also available and shows each visitor's session and which PDF were clicked and if they continued on to another page/event after the first.</p> 
+
+          <img class="img-fluid enlarge" src="img/8_events_flow.png" alt="The events flow chart under Google Analytics Behavior report showing a visitors progress and downloads and they progress from page to page">
+
+          <h2 class="section-heading">Summary</h2>
+
+          <p>Setting up these trackable goals and event doesn't take much time but give the developer and business owner unique insight into what visitors are interested in, what they gravitate to, what grabs their attention. Once a site starts to build up a user base these goals and events allow the developer to better assess where the traffic is coming from, differentiate between which campaigns are attracting more clicks over others and use that data to continue to grow and provide users with content that attracts them.</p>
         </div>
       </div>
     </div>
