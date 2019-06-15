@@ -32,10 +32,7 @@
   <link href='https://fonts.googleapis.com/css?family=Lora:400,700,400italic,700italic' rel='stylesheet' type='text/css'>
   <link href='https://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800'
     rel='stylesheet' type='text/css'>
-
-  <!-- Sign-up Form CSS -->
-  <link href="css/modal.css" rel="stylesheet" type='text/css'>
-
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
   <!-- Custom styles for this template -->
   <link href="css/clean-blog.min.css" rel="stylesheet">
   <link rel="apple-touch-icon" sizes="57x57" href="img/apple-icon-57x57.png">
@@ -55,7 +52,8 @@
   <meta name="msapplication-TileColor" content="#ffffff">
   <meta name="msapplication-TileImage" content="img/ms-icon-144x144.png">
   <meta name="theme-color" content="#ffffff">
-
+  <!-- Sign-up Form CSS -->
+  <link href="css/modal.css" rel="stylesheet" type='text/css'>
 
 </head>
 
@@ -112,9 +110,7 @@
           <div class="site-heading">
             <h1>User Science Journal</h1>
             <span class="subheading">Reflections on Accessibility and Analytics</span>
-
           </div>
-
         </div>
       </div>
     </div>
@@ -122,47 +118,60 @@
 
   <!-- Main Content -->
   <!-- Button to open the modal -->
-<button onclick="document.getElementById('id01').style.display='block'">Sign Up for Kat Mail</button>
+  <button onclick="document.getElementById('id01').style.display='block'">Sign Up for Mail</button>
 
-<!-- The Modal (contains the Sign Up form) -->
-<div id="id01" class="modal">
-  <span onclick="document.getElementById('id01').style.display='none'" class="close" title="Close Modal"></span>
-  <form class="modal-content" action="thanks.html">
-    <div class="container">
-      <h1>Sign Up</h1>
-      <p>Please fill in this form to be added to the mailing list.</p>
-      <hr>
-      <label for="name"><b>Name</b></label>
-      <input type="text" placeholder="Enter Name" name="name" required>
-      
-      <label for="email"><b>Email</b></label>
-      <input type="text" placeholder="Enter Email" name="email" required>
-
-      <div class="clearfix">
-        <button type="submit" class="signup">Sign Up</button>
-        <button type="button" onclick="document.getElementById('id01').style.display='none'" class="cancelbtn">Cancel</button>
-      </div>
-    </div>
-  </form>
-</div>
-  <div class="container">
-    <div class="row">
-      <div class="col-lg-8 col-md-12 mx-auto">
-        <div class="post-preview">
-          <a href="post1.html">
-            <h2 class="post-title">
-              Blogging about Design
-            </h2>
-            <h3 class="post-subtitle">
-              Excited to share my thoughts and findings
-            </h3>
-          </a>
-          <p class="post-meta">Posted by
-            <a href="#">Katerina Plushko</a>
-            on April 1, 2019</p>
-        </div>
+  <!-- The Modal (contains the Sign Up form) -->
+  <div id="id01" class="modal">
+    <span onclick="document.getElementById('id01').style.display='none'" class="close" title="Close Modal"></span>
+    <form class="modal-content" action="thanks.html">
+      <div class="container">
+        <h1>Sign Up</h1>
+        <p>Please fill in this form to be added to the mailing list.</p>
         <hr>
+        <label for="name"><b>Name</b></label>
+        <input type="text" placeholder="Enter Name" name="name" required>
+        
+        <label for="email"><b>Email</b></label>
+        <input type="text" placeholder="Enter Email" name="email" required>
 
+        <div class="clearfix">
+          <button type="submit" class="signup">Sign Up</button>
+          <button type="button" onclick="document.getElementById('id01').style.display='none'" class="cancelbtn">Cancel</button>
+        </div>
+      </div>
+    </form>
+  </div>
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-8 col-md-12 mx-auto">
+          <div class="post-preview">
+            <a href="post1.html">
+              <h2 class="post-title">
+                Blogging about Design
+              </h2>
+              <h3 class="post-subtitle">
+                Excited to share my thoughts and findings
+              </h3>
+            </a>
+            <p class="post-meta">Posted by
+            <a href="#">Katerina Plushko</a>on April 1, 2019</p>
+          </div>
+          <div>
+            <div>
+              <h4>Popular Posts</h4>
+            </div>
+            <ul>
+              <li>
+                <span><a href="post3.html">Usability Testing</a></span>
+              </li>
+              <li>
+                <span><a href="post5.html">Evaluating Accessibility</a></span>
+              </li> 
+              <li>
+                <span><a href="post7.html">Adding Analytics</a></span>
+              </li>    
+            </ul>
+          </div> 
       </div>
     </div>
   </div>
@@ -200,7 +209,7 @@
             </li>
           </ul>
           <p class="copyright text-muted">Copyright &copy; Katplush 2019</p>
-          <div class="copyright text-muted">Icons made by <a href="https://www.flaticon.com/authors/gregor-cresnar" title="Gregor Cresnar">Gregor Cresnar</a> from <a href="https://www.flaticon.com/" 			    title="Flaticon">www.flaticon.com</a> is licensed by <a href="http://creativecommons.org/licenses/by/3.0/" 			    title="Creative Commons BY 3.0" target="_blank">CC 3.0 BY</a></div>
+          <div class="copyright text-muted">Icons made by <a href="https://www.flaticon.com/authors/gregor-cresnar" title="Gregor Cresnar">Gregor Cresnar</a> from <a href="https://www.flaticon.com/" 			    title="Flaticon">www.flaticon.com</a> is licensed by <a href="http://creativecommons.org/licenses/by/3.0/" 			    title="Creative Commons BY 3.0" target="_blank">CC 3.0</a></div>
         </div>
       </div>
     </div>
