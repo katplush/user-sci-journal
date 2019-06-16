@@ -73,18 +73,17 @@
 
 
   <!-- Page Header -->
-  <header class="masthead" style="background-image: url('img/brainstorming.jpg')">
+  <header class="masthead" style="background-image: url('img/9_citrus.jpg')">
     <div class="overlay"></div>
     <div class="container">
       <div class="row">
         <div class="col-lg-8 col-md-10 mx-auto">
           <div class="post-heading">
-            <h1>Blogging About Design</h1>
+            <h1>Goal Experiment Summary Report</h1>
             <h2 class="subheading">Excited to share my thoughts and findings
             </h2>
             <span class="meta">Posted by
-              <a href="#">Katerina Plushko</a>
-              on May 27, 2019</span>
+              <a href="#">Katerina Plushko</a> on June 15, 2019</span>
           </div>
         </div>
       </div>
@@ -96,38 +95,29 @@
     <div class="container">
       <div class="row">
         <div class="col-lg-8 col-md-10 mx-auto">
+          <blockquote class="blockquote">The true method of knowledge is experiment. - William Blake</blockquote>
+          <p>Once the numbers started coming in on the two goals I had set up, one being an event, it was time to see about ways to optimize them. I did some usability testing with some of my known visitors and found that when discussing the pages, many had pointed out that they had not noticed the "download post" link I had set up for easy downloads of my posts. In my initial haste to set up the pages I had set up the link but not updated any of the css to make it stand out. In it's original version it the text color is black, no underline and it doesn't really stand out in any way from the rest of the content in any way. Unless the visitor hovered over the link, it was unlikely they would be able to tell that it was a link at all.</p>
+          <p>First I looked into Google Analytics Content Experiments. Content Experiments allow the developer to create a variant of a webpage and test different variants on users. These experiments report out under the Behavior Tab in Google Analytics under the Experiments view. When I went to check out the view under the Behavior tab, I got the following message, "Google Optimize is the free, preferred way to run experiments. Analytics Content Experiments remain available but are being deprecated in the future. Learn more about Optimize."  Google Optimize works with Google Analytics and provides an enhanced experience of what the Content Experiments had provided. Optimize allows the developer to test variants of their web pages on users and reports out which variants performed best.</p>
           
-          <p><b>Oops, no content yet. Come back soon.</b></p>
-          <p>In the meantime, check out my post on <a href="post7.html">Adding Analytics</a></p>
-          <!-- <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Saepe nostrum ullam eveniet pariatur voluptates odit, fuga atque ea nobis sit soluta odio, adipisci quas excepturi maxime quae totam ducimus consectetur?</p>
-          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eius praesentium recusandae illo eaque architecto error, repellendus iusto reprehenderit, doloribus, minus sunt. Numquam at quae voluptatum in officia voluptas voluptatibus, minus!</p>
-          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aut consequuntur magnam, excepturi aliquid eitaque esse est vero natus quae optio aperiam soluta voluptatibus corporis atque iste neque sit tempora!</p>
-         
-          <h2 class="section-heading">The Final Frontier</h2>
+          <p>To hook up Google Optimize, you need the following:</p>
+          <ol>
+            <li>Google Analytics installed on your website</li>
+            <li>The Chrome web browser</li>
+            <li>The Optimize Chrome extension</li>
+          </ol>
+          <p>If you have all those set up you can go to <a href="https://optimize.google.com">Google Optimize</a> and set up an account. Once that is complete just a single line of code needs to be added to your global site tag that you used to set up Google Analytics tracking on the pages you are testing.</p>
+          
+          <h2 class="section-heading">A/B Testing</h2>
+          <img class="img-fluid enlarge" src="img/8_optimize.png" alt="View of my Google Optimize details page" title="View of my Google Optimize details page">
+          <p>Once the your Google Optimize account is set up and you've created your container for A/B testing, you can start creating a variant. I decided to create a variant of my Post 6 Download Link.  The original (Variant A) was features the original version of my link, black, with no underline. Google Optimize allows you to create an other version for page right from the the Optimize page with a visual editor. Once you've created a Variant B you can test the different looks or features on all visitors or customize who gets what view.</p>
+          
+          <img class="img-fluid enlarge" src="img/9_AB Testing.png" alt="View of the Google Optimize Visual Editor" title="View of the Google Optimize Visual Editor">
 
-          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Saepe nostrum ullam eveniet pariatur voluptates odit, fuga atque ea nobis sit soluta odio, adipisci quas excepturi maxime quae totam ducimus consectetur?</p>
-          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eius praesentium recusandae illo eaque architecto error, repellendus iusto reprehenderit, doloribus, minus sunt. Numquam at quae voluptatum in officia voluptas voluptatibus, minus!</p>
+          <p>I knew I needed to make the "Download Post" link more visible so for my Variant B I brightened up the text color, added an underline to emphasize the link and added the universal icon for downloads.</p>
 
-          <blockquote class="blockquote">Blah Blah Blah</blockquote>
+          <img class="img-fluid enlarge" src="img/9_variants.png" alt="View of my Post 6 Original/Variant A vs Variant B" title="View of my Post 6 Original/Variant A vs Variant B">
 
-          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Saepe nostrum ullam eveniet pariatur voluptates odit, fuga atque ea nobis sit soluta odio, adipisci quas excepturi maxime quae totam ducimus consectetur?</p>
-
-          <h2 class="section-heading">Reaching for the Stars</h2>
-
-          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eius praesentium recusandae illo eaque architecto error, repellendus iusto reprehenderit, doloribus, minus sunt. Numquam at quae voluptatum in officia voluptas voluptatibus, minus!</p>
-          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aut consequuntur magnam, excepturi aliquid eitaque esse est vero natus quae optio aperiam soluta voluptatibus corporis atque iste neque sit tempora!</p>
-
-          <a href="#">
-            <img class="img-fluid" src="img/post-sample-image.jpg" alt="">
-          </a>
-          <span class="caption text-muted">This is just filler text</span>
-
-          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eius praesentium recusandae illo eaque architecto error, repellendus iusto reprehenderit, doloribus, minus sunt. Numquam at quae voluptatum in officia voluptas voluptatibus, minus!</p>
-          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aut consequuntur magnam, excepturi aliquid eitaque esse est vero natus quae optio aperiam soluta voluptatibus corporis atque iste neque sit tempora!</p>
-
-          <p>Placeholder text by
-            <a href="http://spaceipsum.com/">Space Ipsum</a>. Photographs by
-            <a href="https://www.flickr.com/photos/nasacommons/">NASA on The Commons</a>.</p> -->
+          <p>Further testing determined the changes were beneficial to a visitors chances of seeing the link and clicking on it, which in turn increased the my goal results. </p>
         </div>
       </div>
     </div>
